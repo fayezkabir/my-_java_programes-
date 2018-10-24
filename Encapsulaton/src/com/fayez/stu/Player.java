@@ -1,5 +1,10 @@
 package com.fayez.stu;
 
+
+
+//  generally  we do  not  write code  like that because  it has no control to the Player class
+
+
 public class Player {
     public String name;
     public int health;

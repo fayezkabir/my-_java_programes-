@@ -27,6 +27,8 @@ public class Main {
 
        EnhancedPlayer players=new EnhancedPlayer("fayez",200,"cricket bat") ;
         System.out.print("initial health is :-->"); players.sorir();
-        System.out.println("you have not more health than :- "+players.getHealth());
+        System.out.println("you have not more health than :- "+players.getHealth()+players);
+
+        players.getWeapon("");
     }
 }

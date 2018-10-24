@@ -22,6 +22,7 @@ public class EnhancedPlayer {
         System.out.println("00");
 
 
+
     }
 
      public void loseHeath(int damage){
@@ -34,5 +35,10 @@ public class EnhancedPlayer {
 
     public int getHealth(){
         return hitPoint;
+    }
+
+    public String getWeapon(String cricketbat){
+        System.out.println("my weapon  is :- "+weapon);
+        return weapon;
     }
 }

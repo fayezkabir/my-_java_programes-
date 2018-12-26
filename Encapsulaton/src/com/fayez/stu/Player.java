@@ -20,7 +20,8 @@ public class Player {
     }
 
 
-    public int healthRemaining(){
+    public int healthRemaining()
+    {
         return this.health;
     }
 

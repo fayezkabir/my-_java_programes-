@@ -26,6 +26,8 @@ public class Pritha extends  Women{
 
 
 
+
+
     public void setBehavior(){
         System.out.println("hey angry bird how are you ??? ");
     }

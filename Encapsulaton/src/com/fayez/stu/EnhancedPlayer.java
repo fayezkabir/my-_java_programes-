@@ -18,22 +18,42 @@ public class EnhancedPlayer {
         this.weapon=weapon;
     }
 
-    public void sorir(){
-        System.out.println("00");
-
-
+    public String sorir(){
+        //System.out.println("00");
+        return "ghghg";
 
     }
+    public String kuk(){
+        return "hihi";
+    }
 
-     public void loseHeath(int damage){
-     this.hitPoint =this.hitPoint -damage;
+     public String loseHeath(int damage){
+     this.hitPoint =this.hitPoint - damage;
         if(this.hitPoint <=0) {
-        System.out.println("player is knocked out");
+       // System.out.println("player is knocked out");
         //reduce the number  of lives of the remaining players
+            return "knocked out";
+
     }
+
+        // System.out.println("the health is "+this.hitPoint);
+         return "in the game with";
 }
 
+    public void loseHeath1(int damage){
+        this.hitPoint =this.hitPoint - damage;
+        if(this.hitPoint <=0) {
+            // System.out.println("player is knocked out");
+            //reduce the number  of lives of the remaining players
+
+
+        }
+
+         System.out.println("the health is "+this.hitPoint);
+
+    }
     public int getHealth(){
+
         return hitPoint;
     }
 

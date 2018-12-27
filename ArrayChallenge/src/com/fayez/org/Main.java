@@ -3,6 +3,11 @@ package com.fayez.org;
 import java.util.Arrays;
 import java.util.Scanner;
 
+
+                                    //***********         THIS A CODE FOR SORTED LIST  USING ARRAY        ************************\\\\\\\
+
+
+
 public class Main {
     private static Scanner scanner=new Scanner(System.in);
 

@@ -4,54 +4,54 @@ import java.util.Scanner;
 
 public class Main {
 
-    private static Scanner scanner=new Scanner(System.in);
-    private static GroceryList groceryList= new GroceryList();
-    public static void main(String args[]){
-        boolean quit=false;
-        int choice = 0;
-        printInstructions();
-        while(!quit){
-            System.out.println("enter your choice : ");
-            choice=scanner.nextInt();
-              scanner.nextLine();
-            switch(choice){
-                case 0 :
-                    printInstructions();
-                    break;
+        private static Scanner scanner=new Scanner(System.in);
+        private static GroceryList groceryList= new GroceryList();
+        public static void main(String args[]){
+            boolean quit=false;
+            int choice = 0;
+            printInstructions();
+            while(!quit){
+                System.out.println("enter your choice : ");
+                choice=scanner.nextInt();
+                scanner.nextLine();
+                switch(choice){
+                    case 0 :
+                        printInstructions();
+                        break;
 
-                case 1:
-                    groceryList.printGroceryList();
-                    break;
+                    case 1:
+                        groceryList.printGroceryList();
+                        break;
 
-                case 2:
-                    addItem();
-                    break;
-
-
-                case 3:
-                    modifyItem();
-                    break;
-
-                case 4:
-                    removeItem();
-                    break;
-
-                case 5:
-                    searchforItem();
-                    break;
-
-                case 6:
-
-                    quit=true;
-                    break;
+                    case 2:
+                        addItem();
+                        break;
 
 
+                    case 3:
+                        modifyItem();
+                        break;
+
+                    case 4:
+                        removeItem();
+                        break;
+
+                    case 5:
+                        searchforItem();
+                        break;
+
+                    case 6:
+
+                        quit=true;
+                        break;
 
 
+
+
+
+                }
 
             }
-
-        }
 
 
         }
@@ -62,7 +62,7 @@ public class Main {
         public  static void printInstructions(){
             System.out.println("\npress");
             System.out.println("\t 0 - to print the choice option .");
-            System.out.println("\t 1 - to list the grocery item .");
+            System.out.println("\t 1 - to list the grocery iitem .");
             System.out.println("\t 2 - to add an item to the list .");
             System.out.println("\t 3 - to modify an item to the list  .");
             System.out.println("\t 4 - to remove an item  to the list .");
@@ -125,4 +125,6 @@ public class Main {
 
 
     }
+
+
 

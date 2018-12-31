@@ -30,7 +30,8 @@ public class Contacts {
 
 
 
-    public String getName() {
+    public String getName()
+    {
         return name;
     }
 
@@ -38,8 +39,11 @@ public class Contacts {
         return phoneNumber;
     }
 
-    public static Contacts createContacts(String name, String phoneNumber){
 
+
+
+    public static Contacts createContacts(String name, String phoneNumber){  // ******** THIS BLOCK OF  IS ACTUALLY CALLING THE CONSTRUCTOR---
+                                                                            //****** TO CREATE A NEW CONTACT RECORD.
 
         return new Contacts(name, phoneNumber);
     }

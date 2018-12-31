@@ -65,7 +65,7 @@ public class MobilePhone
         }
         return -1;
     }
-    public String queryContact(Contacts contacts){
+    public String queryContact(Contacts contacts){   // this block of code will search for the index  number of the typed name if it is exists
         if (findContacts(contacts)>=0){
             return contacts.getName();
 
@@ -75,15 +75,15 @@ public class MobilePhone
     }
 
 
-    public  Contacts queryContact(String name){
-        int position = findContacts(name);
+    public  Contacts queryContact(String name){  //*** this block of code will search  the contact list  for the name that is typed
+        int position = findContacts(name);      //*****  and will return it  to the contact list
         if (position>=0){
             return this.myContacts.get(position);
         }
         return  null;
     }
 
-    public void printContacts(){
+    public void printContacts(){       // *********  this block of code will print the contact list that are available in the contact list
         System.out.println("contacts lists");
         for (int i=0;i<this.myContacts.size();i++){
 
